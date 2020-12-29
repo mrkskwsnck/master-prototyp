@@ -1,0 +1,18 @@
+[Unit]
+Description=Send observed sensor data
+After=network.target monitor-mode.service wifi-observation.service
+Requires=wifi-observation.service
+
+[Service]
+# Environment=DUMP_DIR=/tmp/airodumps
+# Environment=DUMP_PREFIX=%H
+# Environment=OBSERV_INTERVAL=300
+# Environment=MAC_EXCLUDES=
+# Environment=LOG_LEVEL=debug
+# Environment=MIN_SIGNAL_LEVEL=-67
+# Environment=API_URL=
+# Environment=DATASTREAM_ID=
+ExecStart=/opt/prototyp/bin/send-observation.py
+
+[Install]
+WantedBy=multi-user.target

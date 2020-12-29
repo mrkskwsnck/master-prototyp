@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--
+Copyright (C) 2020  Markus Kwaśnicki
+
+This file is part of the prototype.
+
+This prototype is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This prototype is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this prototype.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<html lang="en">
+    <head>
+        <title>SensorThings Overview</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+        <script src="lib/leaflet/leaflet.js"></script>
+        <script src="lib/axios.min.js"></script>
+
+        <link rel="stylesheet" href="map.css"/>
+        <script src="map.js"></script>
+    </head>
+    <body onload="mapSetup()">
+        <div id="map"></div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+[Unit]
+Description=Turn wireless interface into monitor mode
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=INTERFACE=wlan0
+ExecStart=/usr/sbin/airmon-ng start ${INTERFACE}
+ExecStartPost=/usr/bin/mkdir /tmp/airodumps
+ExecStop=/usr/sbin/airmon-ng stop ${INTERFACE}mon
+ExecStopPost=/usr/bin/rm -r /tmp/airodumps
+
+[Install]
+WantedBy=multi-user.target

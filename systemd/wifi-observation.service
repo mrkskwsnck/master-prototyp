@@ -1,0 +1,14 @@
+[Unit]
+Description=Wi-Fi observation to spot wireless clients
+After=network.target monitor-mode.service
+Requires=monitor-mode.service
+
+[Service]
+Environment=INTERFACE=wlan0mon
+Environment=DUMP_PREFIX=%H
+Environment=WRITE_INTERVAL=30
+WorkingDirectory=/tmp/airodumps
+ExecStart=/usr/sbin/airodump-ng --write ${DUMP_PREFIX} --write-interval ${WRITE_INTERVAL} --output-format netxml --background 1 ${INTERFACE}
+
+[Install]
+WantedBy=multi-user.target

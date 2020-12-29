@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE detection-run SYSTEM "http://kismetwireless.net/kismet-3.1.0.dtd">
+<detection-run>
+	<wireless-network>
+		<wireless-client first-time="Thu Jan  1 00:00:00 1970" last-time="Thu Dec 31 23:59:59 1970">
+			<client-mac>12:34:56:78:9A:BC</client-mac>
+			<client-manuf>Unknown</client-manuf>
+			<snr-info>
+				<last_signal_dbm>-42</last_signal_dbm>
+			</snr-info>
+		</wireless-client>
+	</wireless-network>
+</detection-run>
