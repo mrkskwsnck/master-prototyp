@@ -1,6 +1,6 @@
-# Prototyp
+# Prototyp zur Erfassung und Visualisierung der Personenanzahl in Gebäuden
 
-Prototyp der Masterarbeit des berufsbegleitenden Masterstudiengangs Geoinformatik M.Eng. an der Hochschule Mainz
+Dieser Prototyp ist durch eine Masterarbeit des berufsbegleitenden Masterstudiengangs Geoinformatik M.Eng. an der Hochschule Mainz entstanden.
 
 ## Beschreibung
 
